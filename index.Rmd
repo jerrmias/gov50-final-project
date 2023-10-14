@@ -9,7 +9,7 @@ output:
 
 
 
-## Project thoughts
+## Project Thoughts
 
 I am interested in exploring data related to health outcomes of four-year college students vs. the general public. I could focus on certain diseases and compare outcomes between the two groups to see if there are exacerbated differences in health outcomes. Doing a bit of research could help me narrow down the possible reasons as to why the resulting differences are.
 
