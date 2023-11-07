@@ -25,7 +25,7 @@ covid$total_percent_at_risk <- gsub("%", "", paste(covid$total_percent_at_risk))
 covid |>
   ggplot(mapping = aes(x = as.numeric(total_percent_at_risk), y = high_risk_per_ICU_bed)) +
   geom_point() +
-  geom_smooth(method = "lm", se = FALSE) +
+  geom_smooth(method = "lm", se = TRUE) +
   labs(
     title = "Total % of High-Risk Individuals vs. # of High-Risk Individuals Per ICU Bed",
     x = "Total Percent of Individuals at High Risk",
@@ -34,3 +34,5 @@ covid |>
     caption = "Source: CDC's BRFSS (2017) & KFF (2018-2019)"
   )
 ```
+
+This scatter plot includes a graphed least-squares regression line that shows that as the total percent of individuals at high risk increases, the number of high-risk individuals per ICU bed decreases, in urban centers across the U.S. This relationship might show that urban centers that have populations with a high total percent of individuals at high risk are working with a lot more resources that allow them to minimize the number of high-risk individuals per ICU bed. In other words, they are able to host more ICU beds in their hospitals which minimizes the number of high-risk individuals per ICU bed. On the other hand, urban centers that have populations with a low total percent of individuals at high risk might have a much more fragile healthcare system as they incur a higher number of high-risk individuals per ICU bed. Why is this finding important? Well, this highlights a possible disparity in resources available to healthcare facilities in urban centers with a low total percent of individuals at high risk, especially during pandemics, epidemics, or outbreaks similar to COVID-19. These urban centers with significantly less high-risk individuals would be expected to have a much lower number of high-risk individuals per ICU bed, yet the number is higher. While a direct association between this assumption and viewed correlation can be immediately made, it encourages further analysis of the subject. 
