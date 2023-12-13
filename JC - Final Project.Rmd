@@ -1,11 +1,13 @@
 ---
-title: "GOV50 Final Project"
-author: Jeremias Castillo
-description: "My Final Project"
-output:
-  distill::distill_article:
-    self_contained: false
+title: "Final Project"
+author: "Jeremias Castillo"
+date: "2023-12-13"
+output: pdf_document
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ## Introduction:
 
